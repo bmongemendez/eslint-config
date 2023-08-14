@@ -1,0 +1,25 @@
+{
+	"name": "eslint-prettier-config",
+	"version": "1.0.0",
+	"description": "Brayan's default ESLint config files",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"lint": "npx markdownlint-cli2 README.md"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bmongemendez/eslint-config.git"
+	},
+	"author": "Brayan Monge Méndez <bmongemendez@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/bmongemendez/eslint-config/issues"
+	},
+	"homepage": "https://github.com/bmongemendez/eslint-config#readme",
+	"devDependencies": {
+		"markdownlint": "^0.30.0",
+		"markdownlint-cli2": "^0.8.1",
+		"prettier": "3.0.1"
+	}
+}
