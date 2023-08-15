@@ -19,7 +19,7 @@ All the configuration files include Prettier in their `"extends"` key, this will
 
 We make use of the [`.prettierrc.json`](.prettierrc.json) file to enforce the default configuration of Prettier (among any other rules defined inside it), preventing any possible non-desired configuration variations inside the Visual Studio Code extension among developers.
 
-It is highly recommended to install the official [Prettier extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) to have real-time Prettier formatting.
+It is highly recommended to install the official [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for Visual Studio Code to have real-time linting and formatting.
 
 For more information about **Prettier**, follow [this link](https://prettier.io/) to the official site.
 
