@@ -51,7 +51,7 @@ For more information about configuring **ESLint**, follow [this link](https://es
     }
    ```
 
-   It is highly recommended to install the official [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for Visual Studio Code to have real-time automatic linting and formatting.
+It is highly recommended to install the official [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for Visual Studio Code to have real-time automatic linting and formatting.
 
 > ❗️ **WARNING**: If you are not using ECMAScript modules (you don't have [`"type": "module"`](https://nodejs.org/api/packages.html#type) in your `package.json`), you'll need to remove [`"sourceType": "module"`](https://eslint.org/docs/latest/use/configure/language-options#specifying-parser-options) from `.eslintrc.json`
 
