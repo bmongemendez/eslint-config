@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"prettier:check": "npx prettier . --check",
+		"prettier": "npx prettier . --check",
 		"prettier:write": "npx prettier . --write",
 		"lint:md": "npx markdownlint-cli2 README.md"
 	},
