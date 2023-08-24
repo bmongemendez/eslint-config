@@ -9,17 +9,18 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/bmongemendez/eslint-config.git"
+		"url": "https://github.com/branzdev/eslint-prettier-config.git"
 	},
 	"author": "Brayan Monge Méndez <bmongemendez@gmail.com>",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/bmongemendez/eslint-config/issues"
+		"url": "https://github.com/branzdev/eslint-prettier-config/issues"
 	},
-	"homepage": "https://github.com/bmongemendez/eslint-config#readme",
+	"homepage": "https://github.com/branzdev/eslint-prettier-config#readme",
 	"devDependencies": {
 		"markdownlint": "^0.30.0",
 		"markdownlint-cli2": "^0.8.1",
 		"prettier": "3.0.1"
 	}
 }
+
