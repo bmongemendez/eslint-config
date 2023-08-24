@@ -13,13 +13,11 @@ ESLint & Prettier configurations for quick starting different type of JavaScript
 
 ## General Info
 
-> **Note**: All these configurations are based on the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript/tree/master).
+> 📙 **Note**: All these configurations are based on the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript/tree/master).
 
 All the configuration files include Prettier in their `"extends"` key, this will disable all ESLint formatting rules that interfere with Prettier and leave the formatting responsibility **only** to Prettier.
 
 We make use of the [`.prettierrc.json`](.prettierrc.json) file to enforce the default configuration of Prettier (among any other rules defined inside it), preventing any possible non-desired configuration variations inside the Visual Studio Code extension among developers.
-
-It is highly recommended to install the official [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for Visual Studio Code to have real-time linting and formatting.
 
 For more information about **Prettier**, follow [this link](https://prettier.io/) to the official site.
 
@@ -33,7 +31,29 @@ For more information about configuring **ESLint**, follow [this link](https://es
 2. Copy and paste the [`.prettierrc.json`](./.prettierrc.json) file in your project's root directory.
 3. Install the required dependencies specified for your type of project on each section.
 
-> **Note**: If you are not using ECMAScript modules (you don't have [`"type": "module"`](https://nodejs.org/api/packages.html#type) in your `package.json`), you'll need to remove [`"sourceType": "module"`](https://eslint.org/docs/latest/use/configure/language-options#specifying-parser-options) from `.eslintrc.json`
+> 💡 TIP: You can add the following scripts to your `package.json` to run **ESLint** and **Prettier** from your terminal.
+
+1. Run ESLint on all `.js`, `.jsx`, `.cjs`, `.mjs`, `.ts`, `.tsx`, `.cts`, and `.mts` files in the whole project (run this command from the project's root directory).
+
+   ```json
+   "scripts": {
+        "lint": "npx eslint \"**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts}\" --report-unused-disable-directives --max-warnings 0",
+        "lint:fix": "npx eslint \"**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts}\" --report-unused-disable-directives --max-warnings 0 --fix"
+    }
+   ```
+
+2. Run Prettier on all supported files in the whole project (run this command from the project's root directory).
+
+   ```json
+   "scripts": {
+        "prettier": "npx prettier . --check",
+        "prettier:write": "npx prettier . --write"
+    }
+   ```
+
+   It is highly recommended to install the official [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for Visual Studio Code to have real-time automatic linting and formatting.
+
+> ❗️ **WARNING**: If you are not using ECMAScript modules (you don't have [`"type": "module"`](https://nodejs.org/api/packages.html#type) in your `package.json`), you'll need to remove [`"sourceType": "module"`](https://eslint.org/docs/latest/use/configure/language-options#specifying-parser-options) from `.eslintrc.json`
 
 ⬆️ [Back to top](#table-of-contents)
 
@@ -92,6 +112,6 @@ npm install prettier -D -E
 
 ## Notes
 
-- More project-specific configurations will be added in the future.
+- More project-specific configurations may be added in the future.
 
 ⬆️ [Back to top](#table-of-contents)
