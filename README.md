@@ -57,7 +57,7 @@ It is highly recommended to install the official [ESLint extension](https://mark
 
 ⬆️ [Back to top](#table-of-contents)
 
-## Base
+## Base (Vanilla JS)
 
 You can use this config if you just want to use JavaScript without any specific framework.
 
