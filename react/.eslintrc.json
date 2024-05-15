@@ -14,6 +14,14 @@
 	"rules": {
 		// Disabled this rule because in some React projects like Vite or Next.js,
 		// importing React explicitly is NOT required
-		"react/react-in-jsx-scope": "off"
+		"react/react-in-jsx-scope": "off",
+		// Use only default function arguments because .defaultProps will be deprecated
+		"react/require-default-props": [
+			"error",
+			{
+				"functions": "defaultArguments"
+			}
+		]
+		
 	}
 }
